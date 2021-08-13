@@ -12,9 +12,9 @@ var particles = [];
 var flowfield;
 
 function setup() {
-  createCanvas(600, 400);
-  cols = floor(window.innerWidth / scl);
-  rows = floor(window.innerHeight / scl);
+  createCanvas(window.innerWidth, window.innerHeight);
+  cols = floor(width / scl);
+  rows = floor(height / scl);
   fr = createP('');
 colorMode(HSB, 255)
 
